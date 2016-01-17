@@ -30,4 +30,5 @@ default.
 For a detailed list of changes, as compared to the 'minimal' & 'xfce releases', please refer to the f23-rpi2-mini-remix.ks kickstart  file.
 
   *\*Fedora and the Infinity design logo are trademarks of Red Hat, Inc.*
+  
   *^Raspberry Pi is a trademark of the Raspberry Pi Foundation*

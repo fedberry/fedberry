@@ -40,6 +40,7 @@ All software sources for the RPMs can be found in the provided SRPMs here:
 https://vaughan.fedorapeople.org/fed23/SRPMS
 
 ###DISCLAIMER
-All software provided on this site are being offered for FREE in hopes that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. Use at your OWN RISK AND WE DISCLAIM LIABILITY FOR ANY DAMAGES RESULTING FROM ITS USE.
-*Fedora and the Innity design logo are trademarks of Red Hat, Inc. ^Raspberry Pi is a trademark of the Raspberry Pi Foundation
+**All software provided on this site are being offered for FREE in hopes that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. Use at your OWN RISK AND WE DISCLAIM LIABILITY FOR ANY DAMAGES RESULTING FROM ITS USE.**
+
+*Fedora and the Innity design logo are trademarks of Red Hat, Inc. ^Raspberry Pi is a trademark of the Raspberry Pi Foundation*
    

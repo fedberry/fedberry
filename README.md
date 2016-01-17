@@ -6,7 +6,7 @@
 
 ## IMPORTANT INFORMATION
 
-These are Fedora® Remix disk images specically built for use with the Raspberry Pi® 2 (RPi2) computer. These disk images are unof cial Fedora Remixes and are not af liated, provided or supported by the Fedora Project. Oficial, unmodifed Fedora software is available through the Fedora Project website http://fedoraproject.org. *^
+These are Fedora® Remix disk images specifically built for use with the Raspberry Pi® 2 (RPi2) computer. These disk images are unofficial Fedora Remixes and are not af liated, provided or supported by the Fedora Project. Official, unmodified Fedora software is available through the Fedora Project website http://fedoraproject.org. *^
 
 ###Installation
 Please read [INSTALL.md](https://github.com/fedberry/fedberry/blob/master/INSTALL.md)

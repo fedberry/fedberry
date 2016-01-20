@@ -31,6 +31,7 @@ To facilitate default headless support, a root user password is already set. Ple
 **Root password = fedberry**
 
 A default user of 'raspberry' is also created but password change is required after the first login.
+
 **User password = raspberry**
 
 ###Additional or Modied Software

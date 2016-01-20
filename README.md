@@ -34,7 +34,7 @@ A default user of 'raspberry' is also created but password change is required af
 
 **User password = raspberry**
 
-###Additional or Modied Software
+###Additional or Modified Software
 As this is a Fedora Remix, some additional or modified RPMs are included to enable full compatibility with the BCM2836 SOC (RPi2) or to add extra features. The most significant change is a custom kernel. The included kernel has vanilla kernel.org sources patched with modications from the Raspberry Pi foundation's kernel tree (bcm2709 port). Refer here: https://github.com/raspberrypi/linux.
 
 All software sources for the RPMs can be found in our githib repositories (https://github.com/fedberry) or the provided SRPMs here: https://vaughan.fedorapeople.org/fed23/SRPMS
@@ -42,7 +42,7 @@ All software sources for the RPMs can be found in our githib repositories (https
 ###DISCLAIMER
 **All software provided on this site are being offered for FREE in hopes that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. Use at your OWN RISK AND WE DISCLAIM LIABILITY FOR ANY DAMAGES RESULTING FROM ITS USE.**
 
-**Fedora and the Innity design logo are trademarks of Red Hat, Inc.*
+**Fedora and the Infinity design logo are trademarks of Red Hat, Inc.*
 
 *^Raspberry Pi is a trademark of the Raspberry Pi Foundation*
    

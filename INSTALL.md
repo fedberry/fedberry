@@ -11,7 +11,7 @@ The image can be installed using the Unix/Linux dd command.
 
 ###Steps:
 
-1. Download the image and ensure you have not got a corrupted disk image by running sha256sum on the  le and checking it against provided checksums.
+1. Download the image and ensure you have not got a corrupted disk image by running sha256sum on the file and checking it against provided checksums.
 
   For example:
   
@@ -27,10 +27,10 @@ The image can be installed using the Unix/Linux dd command.
 
   PLEASE NOTE that the use of the 'dd' tool can overwrite ANY partition on your computer. If you specify the wrong device you could delete all your existing linux partitions. Make sure you KNOW what you are doing here otherwise don't do it or ask someone else who does! Please be VERY careful!
   
-  Ensure the device is unmounted then copy the image  le to the card: xzcat NameOfImageFile | dd of=/dev/DeviceNode
+  Ensure the device is unmounted then copy the image file to the card: xzcat NameOfImageFile | dd of=/dev/DeviceNode
 
   For example:
-
+  
   xzcat fedora-23-remix-rpi2-minimal-1.raw.xz | dd of=/dev/sdc
 
 4. Run 'sync'; this will ensure the write cache is flushed and that it is safe to unmount and remove your SD card from the card reader.

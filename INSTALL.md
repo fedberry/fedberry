@@ -1,5 +1,5 @@
 ##SD CARD INSTALLATION
-Download images here: http://fedberry.agrez.net
+Download images here: [http://fedberry.agrez.net](http://fedberry.agrez.net)
 
 The image can be installed using the Unix/Linux dd command.
 

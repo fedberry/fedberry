@@ -5,7 +5,7 @@
 These are Fedora® Remix disk images specifically built for use with the Raspberry Pi® 2 (RPi2) computer. These disk images are unofficial Fedora Remixes and are not afiliated, provided or supported by the Fedora Project. Official, unmodified Fedora software is available through the Fedora Project website http://fedoraproject.org. *^
 
 ##Installation
-Download images here: http://fedberry.agrez.net
+Download images here: [http://fedberry.agrez.net](http://fedberry.agrez.net)
 
 Please read [INSTALL.md](https://github.com/fedberry/fedberry/blob/master/INSTALL.md)
 
@@ -33,7 +33,7 @@ A default user of 'raspberry' is also created but password change is required af
 **User password = raspberry**
 
 ##Additional or Modified Software
-Our Yum repository is located here: https://vaughan.fedorapeople.org
+Our Yum repository is located here: [https://vaughan.fedorapeople.org](https://vaughan.fedorapeople.org)
 
 As this is a Fedora Remix, some additional or modified RPMs are included to enable full compatibility with the BCM2836 SOC (RPi2) or to add extra features. The most significant change is a custom kernel. The included kernel has vanilla kernel.org sources patched with modications from the Raspberry Pi foundation's kernel tree (bcm2709 port). Refer here: https://github.com/raspberrypi/linux.
 

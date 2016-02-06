@@ -5,7 +5,7 @@
 These are Fedora® Remix disk images specifically built for use with the Raspberry Pi® 2 (RPi2) computer. These disk images are unofficial Fedora Remixes and are not afiliated, provided or supported by the Fedora Project. Official, unmodified Fedora software is available through the Fedora Project website http://fedoraproject.org. *^
 
 ##Installation
-Download images here: [http://fedberry.agrez.net](http://fedberry.agrez.net)
+Download images here: [http://download.fedberry.org](http://download.fedberry.org/releases/)
 
 Please read [INSTALL.md](https://github.com/fedberry/fedberry/blob/master/INSTALL.md)
 

@@ -13,7 +13,7 @@ To achieve these goals, sacrifices were made. For example, included language sup
 - Root logins using sshd are disabled (login via ssh using 'raspberry' user instead).
 - There is limited 'out of box' hardware support. 'linux-firmware' is not installed by default on the image. You may need to install it for specific hardware support (eg. various wireless network cards). Please note, linux-firmware will be installed by default with a kernel update.
 - Language support is limited to en_US.utf8, all other languages have been stripped from the image to save space.
-- Documentation in rpm packages have been excluded from the image.
+- All documentation / man pages from rpm packages have been excluded/stripped from the image.
 - SELinux is disabled by default.
 - Firewalld is not installed.
 - Plymouth is not installed.

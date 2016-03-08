@@ -9,11 +9,11 @@ This remix differs significantly from default Fedora settings used in their arm 
 To achieve these goals, sacrifices were made. For example, included language supoort is limited to en_US and security related features such as selinux or firewalld are disabled / removed. Therefore, it is not advisable to run services that are directly exposed to the internet, rather it should be safely tucked away behind a NAT firewall or something similar.
 
 ####Major changes include:
-- To facilitate 'out of box' headless support, initial-setup is not run on first boot and passwords are set for both 'root' & 'raspberry' users. Please see README for more information.
+- To facilitate 'out of box' headless support, initial-setup is not run on first boot and passwords are set for both 'root' & 'raspberry' users. Please see [README.md](https://github.com/fedberry/fedberry/blob/master/README.md) for more information.
 - Root logins using sshd are disabled (login via ssh using 'raspberry' user instead).
 - There is limited 'out of box' hardware support. 'linux-firmware' is not installed by default on the image. You may need to install it for specific hardware support (eg. various wireless network cards). Please note, linux-firmware will be installed by default with a kernel update.
 - Language support is limited to en_US.utf8, all other languages have been stripped from the image to save space.
-- All documentation / man pages from rpm packages have been excluded/stripped from the image.
+- All documentation (eg. man pages) from rpm packages have been excluded/stripped from the image.
 - SELinux is disabled by default.
 - Firewalld is not installed.
 - Plymouth is not installed.

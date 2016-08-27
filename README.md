@@ -1,8 +1,8 @@
-# ![fedberry](https://avatars2.githubusercontent.com/u/16729488?v=3&s=40) FedBerry - Fedora Remix for Raspberry Pi 2
+# ![fedberry](https://avatars2.githubusercontent.com/u/16729488?v=3&s=40) FedBerry 23 - Fedora Remix for Raspberry Pi 2/3 B
 
 ## IMPORTANT INFORMATION
 
-These are Fedora® Remix disk images specifically built for use with the Raspberry Pi® 2 (RPi2) computer. These disk images are unofficial Fedora Remixes and are not afiliated, provided or supported by the Fedora Project. Official, unmodified Fedora software is available through the Fedora Project website http://fedoraproject.org. *^
+These are Fedora® Remix disk images specifically built for use with the Raspberry Pi® 2/3 (RPi2/3) computers. These disk images are unofficial Fedora Remixes and are not afiliated, provided or supported by the Fedora Project. Official, unmodified Fedora software is available through the Fedora Project website http://fedoraproject.org. *^
 
 ##Installation
 Download images here: [http://download.fedberry.org](http://download.fedberry.org/releases/)
@@ -35,7 +35,7 @@ A default user of 'raspberry' is also created but password change is required af
 ##Additional or Modified Software
 The Yum repository is located here: [http://download.fedberry.org/releases/](http://download.fedberry.org/releases/)
 
-As this is a Fedora Remix, some additional or modified RPMs are included to enable full compatibility with the BCM2836 SOC (RPi2) or to add extra features. The most significant change is a custom kernel. The included kernel has vanilla kernel.org sources patched with modications from the Raspberry Pi foundation's kernel tree (bcm2709 port). Refer here: https://github.com/raspberrypi/linux.
+As this is a Fedora Remix, some additional or modified RPMs are included to enable full compatibility with the BCM2836/7 SOCs (RPi2/3) or to add extra features. The most significant change is a custom kernel. The included kernel has vanilla kernel.org sources patched with modications from the Raspberry Pi foundation's kernel tree (bcm2709 port). Refer here: https://github.com/raspberrypi/linux.
 
 All software sources for the RPMs can be found in our githib repositories (https://github.com/fedberry) or the provided SRPMs here: http://download.fedberry.org/releases/
 

@@ -21,15 +21,16 @@ The root partition is NOT automatically re-sized at boot due to boot time and im
 ##Default User / Passwords
 
 ####Minimal, XFCE & LXQt release images
-To facilitate optional headless support, a root user password is already set. After the initial OS boot, please set the timezone, root password and create users when prompted at initial setup. If you choose not to change the root password using initial-setup, then you will be prompted to change it at  first login. 
+To facilitate optional headless support, a root user password is already set. After the initial OS boot, please set the timezone, root password and create users when prompted at initial setup. If you choose not to change the root password using initial-setup (eg. you initally boot using headless mode), then you will be prompted to change it at  first login. 
 
 ####Barebone release image
 To facilitate default headless support, a root user password is already set. You will be prompted to change your root password when you first login.
 
 **Root password = fedberry**
 
+
 ##Additional or Modified Software
-The Yum repository is located here: [http://download.fedberry.org/releases/](http://download.fedberry.org/releases/)
+Yum repositories are located here: [http://download.fedberry.org/releases/](http://download.fedberry.org/releases/)
 
 As this is a Fedora Remix, some additional or modified RPMs are included to enable full compatibility with the BCM2836/7 SOCs (RPi2/3) or to add extra features. The most significant change is a custom kernel. The included kernel has vanilla kernel.org sources patched with modications from the Raspberry Pi foundation's kernel tree (bcm2709 port). Refer here: https://github.com/raspberrypi/linux.
 

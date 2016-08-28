@@ -13,7 +13,7 @@ Please read [INSTALL.md](https://github.com/fedberry/fedberry/blob/master/INSTAL
 
 ####Minimal, XFCE & LXQt release images
 
-The root partition is automatically re-sized when the OS is first booted. After re-sizing, it will automatically reboot. After rebooting the system will launch the 'initial-setup' utility. For graphical images this will occur on the display, for minimal images this will occur on the serial console. Failure to complete the initial-setup will prevent logging into the system.
+The root partition is automatically re-sized when the OS is first booted. After re-sizing, it will automatically reboot. After rebooting the system will launch the 'initial-setup' utility. For graphical images this will occur on the display, for minimal images this will occur on the serial console.
 
 ####Barebone release image
 The root partition is NOT automatically re-sized at boot due to boot time and image size considerations. The initial-setup utility is not used for this release.

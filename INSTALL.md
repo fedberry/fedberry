@@ -2,16 +2,14 @@
 Download images here: [http://download.fedberry.org](http://download.fedberry.org/releases/)
 
 ###Requirements:
-- A computer running some form of Unix or Linux.
+- A computer running some form of Linux/Unix or Windows.
 - A minimum 4GB SD card is recommended for 'mini' & 'minimal' image installs.
 - A minimum 8GB SD card is recommended for all other disk images.
 - A SD/SDHC card writer, either built in to the computer or connected to a USB port.
 
-###Install Images using a Linux OS
+###Install Images using a Linux/Unix OS
 
 The image can be installed using the Unix/Linux dd command.
-
-##Steps:
 
 1.  Download the image and ensure you have not got a corrupted disk image by running sha256sum on the file and checking it against provided checksums.
 

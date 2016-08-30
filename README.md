@@ -18,16 +18,15 @@ The root partition is automatically re-sized when the OS is first booted. After 
 ####Barebone release image
 The root partition is NOT automatically re-sized at boot due to boot time and image size considerations. The initial-setup utility is not used for this release.
 
-##Default User / Passwords
+##Default Passwords
+
+**Root password = fedberry**
 
 ####Minimal, XFCE & LXQt release images
 To facilitate optional headless support, a root user password is already set. After the initial OS boot, please set the timezone, root password and create users when prompted at initial setup. If you choose not to change the root password using initial-setup (eg. you initally boot using headless mode), then you will be prompted to change it at  first login. 
 
 ####Barebone release image
 To facilitate default headless support, a root user password is already set. You will be prompted to change your root password when you first login.
-
-**Root password = fedberry**
-
 
 ##Additional or Modified Software
 Yum repositories are located here: [http://download.fedberry.org/releases/](http://download.fedberry.org/releases/)

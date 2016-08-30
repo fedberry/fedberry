@@ -3,7 +3,7 @@ Download images here: [http://download.fedberry.org](http://download.fedberry.or
 
 ###Requirements:
 - A computer running some form of Linux/Unix or Windows.
-- A minimum 4GB SD card is recommended for 'mini' & 'minimal' image installs.
+- A minimum 4GB SD card is recommended for 'barebone' & 'minimal' image installs.
 - A minimum 8GB SD card is recommended for all other disk images.
 - A SD/SDHC card writer, either built in to the computer or connected to a USB port.
 
@@ -40,18 +40,18 @@ The image can be installed using the Unix/Linux dd command.
 
 ###Install Images using Windows
 
-1.  Extract the downloaded fedberry xz compressed raw image. You can use a file archiver such as [7-zip](http://www.7-zip.org) to extract xz files under windows.
+1.  Extract the downloaded fedberry xz compressed raw image. You can use a file archiver such as [7-zip](http://www.7-zip.org) to extract xz files under Windows.
 
-2.  Download the Win32DiskImager utility from the [Sourceforge Project](http://sourceforge.net/projects/win32diskimager/) page as a zip file; you can run this from a USB drive.
+2.  Download the Win32DiskImager utility from the [Sourceforge Project](http://sourceforge.net/projects/win32diskimager/).
 
-3.  Insert the SD card into your SD card reader and check which drive letter was assigned. You can easily see the drive letter, such as ```G:```, by looking in the left column of Windows Explorer. You can use the SD card slot if you have one, or a cheap SD adapter in a USB port.
+3.  Insert the SD card into your SD card reader and check which drive letter was assigned. You can easily see the drive letter, such as ```G:```, by looking in the left column of Windows Explorer. You can use the SD card slot if you have one, or a SD adapter in a USB port.
 
-4.  Extract the executable from the Win32DiskImager zip file and run the Win32DiskImager utility; you may need to run this as administrator. Right-click on the file, and select Run as administrator.
+4.  Extract the executable from the Win32DiskImager zip file and run the Win32DiskImager utility. You may need to run this as administrator; right-click on the file and select Run as administrator.
 
-5.  Select the raw image file you extracted in step 1.
+5.  Select the raw fedberry image file you extracted in step 1.
 
-6.  Select the drive letter of the SD card in the device box. Be careful to select the correct drive; if you get the wrong one you can destroy the data on your computer's hard disk! If you are using an SD card slot in your computer and can't see the drive in the Win32DiskImager window, try using an external SD adapter.
+6.  Select the drive letter of the SD card in the device box. WARNING: Be careful to select the correct drive. If you get the wrong drive you can destroy data on your computer's hard disk. If you are using an SD card slot in your computer and can't see the drive in the Win32DiskImager window, try using an external SD adapter.
 
-7.  Click Write and wait for the write to complete.
+7.  Click 'Write' and wait for the process to complete.
 
 8.  Exit Win32DiskImager, remove the SD card and use it to boot FedBerry on your RPi2/3.

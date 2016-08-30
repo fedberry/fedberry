@@ -1,37 +1,59 @@
 ##SD CARD INSTALLATION
 Download images here: [http://download.fedberry.org](http://download.fedberry.org/releases/)
 
-The image can be installed using the Unix/Linux dd command.
-
 ###Requirements:
 - A computer running some form of Unix or Linux.
 - A minimum 4GB SD card is recommended for 'mini' & 'minimal' image installs.
 - A minimum 8GB SD card is recommended for all other disk images.
 - A SD/SDHC card writer, either built in to the computer or connected to a USB port.
 
-###Steps:
+###Install Images using a Linux OS
+
+The image can be installed using the Unix/Linux dd command.
+
+##Steps:
 
 1.  Download the image and ensure you have not got a corrupted disk image by running sha256sum on the file and checking it against provided checksums.
-    
-    For example:
-    
-    ```$ sha256sum fedora-23-remix-rpi2-minimal-1.raw.xz```
-    
-    OR
-    
-    ```$ sha256sum -c fedora-23-remix-rpi2.CHECKSUM```
 
+    For example:
+    ```
+    $ sha256sum -c fedberry-24.1-beta1.CHECKSUM.asc
+    ```
 2.  Insert your sd card and determine which device node has been assigned to your media. Read /var/log/messages or run 'dmesg' 'to learn which device was assigned to your media (this will be something like /dev/sdc or /dev/mmcblk0).
 
 3.  As root user or 'sudo', use 'dd' to write the disk image to your SD card.
 
     PLEASE NOTE that the use of the 'dd' tool can overwrite ANY partition on your computer. If you specify the wrong device you could delete all your existing linux partitions. Make sure you KNOW what you are doing here otherwise don't do it or ask someone else who does! Please be VERY careful!
     
-    Ensure the device is unmounted then copy the image file to the card: xzcat NameOfImageFile | dd of=/dev/DeviceNode
+    Ensure the device is unmounted then copy the image file to the card: xzcat NameOfImageFile.raw.xz | dd bs=1M of=/dev/DeviceNode status=progress
     
     For example:
+    ```
+    $ xzcat fedberry-minimal-24.1-beta1.raw.xz |dd bs=1M of=/dev/sdc status=progress
+    ```
     
-    ```$ xzcat fedora-23-remix-rpi2-minimal-1.raw.xz | dd of=/dev/sdc```
-    
-4.  Run 'sync'; this will ensure the write cache is flushed and that it is safe to unmount and remove your SD card from the card reader.
- 
+4.  Run 'sync'; this will ensure the write cache is flushe and that it is safe to unmount and remove your SD card from the card reader.
+    ```
+    $ sync
+    ```
+
+5.   Remove the SD card from the card reader and use it to boot FedBerry on your RPi2/3
+
+
+###Install Images using Windows
+
+1.  Extract the downloaded fedberry xz compressed raw image. You can use a file archiver such as [7-zip](http://www.7-zip.org) to extract xz files under windows.
+
+2.  Download the Win32DiskImager utility from the [Sourceforge Project](http://sourceforge.net/projects/win32diskimager/) page as a zip file; you can run this from a USB drive.
+
+3.  Insert the SD card into your SD card reader and check which drive letter was assigned. You can easily see the drive letter, such as ```G:```, by looking in the left column of Windows Explorer. You can use the SD card slot if you have one, or a cheap SD adapter in a USB port.
+
+4.  Extract the executable from the Win32DiskImager zip file and run the Win32DiskImager utility; you may need to run this as administrator. Right-click on the file, and select Run as administrator.
+
+5.  Select the raw image file you extracted in step 1.
+
+6.  Select the drive letter of the SD card in the device box. Be careful to select the correct drive; if you get the wrong one you can destroy the data on your computer's hard disk! If you are using an SD card slot in your computer and can't see the drive in the Win32DiskImager window, try using an external SD adapter.
+
+7.  Click Write and wait for the write to complete.
+
+8.  Exit Win32DiskImager, remove the SD card and use it to boot FedBerry on your RPi2/3.

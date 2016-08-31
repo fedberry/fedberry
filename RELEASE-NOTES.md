@@ -1,10 +1,10 @@
 ##Minimal & XFCE Remixes
 
 Both these remixes are close to 'stock' arm releases from Fedora*. Where possible, they endeavor to stick to default Fedora release settings. Major differences are:
-- The use of swap files in lieu of swap partitions
-- Having /tmp on tmpfs is enabled but size limited to 100M
-- The root partition is automatically set to resize on first boot
-- To facilitate optional headless booting, a default root password is set (fedberry).
+- The use of swap files in lieu of swap partitions.
+- Having /tmp on tmpfs is enabled but size limited to 100M.
+- The root partition is automatically set to resize on first boot.
+- To facilitate optional headless booting, a default root password (fedberry) is set in the 'minimal' release.
 
 
 ##Barebone Remix

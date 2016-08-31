@@ -25,7 +25,7 @@ The root partition is NOT automatically re-sized at boot due to boot time and im
 ####XFCE & LXQt release images
 No root user password (or users) are set by default. After the initial OS boot, please set the timezone, root password and create users when prompted at initial setup.
 
-####Minimal image
+####Minimal release image
 To facilitate optional headless support, a root user password is already set. After the initial OS boot, please set the timezone, root password and create users when prompted at initial setup. If you choose not to change the root user password using initial-setup (eg. you initially boot using headless mode), then you will be prompted to change it at first login. 
 
 ####Barebone release image

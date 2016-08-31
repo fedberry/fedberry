@@ -11,22 +11,27 @@ Please read [INSTALL.md](https://github.com/fedberry/fedberry/blob/master/INSTAL
 
 ##First Boot
 
-####Minimal, XFCE & LXQt release images
+####XFCE & LXQt release images
+The root partition is automatically re-sized on the first boot. After automatically rebooting the graphical 'initial-setup' utility will start. Failure to complete the initial-setup will prevent logging into the system.
 
-The root partition is automatically re-sized when the OS is first booted. After re-sizing, it will automatically reboot. After rebooting the system will launch the 'initial-setup' utility. For graphical images this will occur on the display, for minimal images this will occur on the serial console.
+####Minimal release image
+The root partition is automatically re-sized on the first boot. After automatically rebooting and if headless mode is not enabled, the serial console 'initial-setup' utility will start. If headless mode is enabled, log in using the default root user password at the login prompt.
 
 ####Barebone release image
-The root partition is NOT automatically re-sized at boot due to boot time and image size considerations. The initial-setup utility is not used for this release.
+The root partition is NOT automatically re-sized at boot due to boot time and image size considerations. The initial-setup utility is not used for this release. You can optionally use fedberry-config to resize the root partition after booting.
 
-##Default Passwords
+##Default Password
 
-**Root password = fedberry**
+####XFCE & LXQt release images
+No root user password (or users) are set by default. After the initial OS boot, please set the timezone, root password and create users when prompted at initial setup.
 
-####Minimal, XFCE & LXQt release images
-To facilitate optional headless support, a root user password is already set. After the initial OS boot, please set the timezone, root password and create users when prompted at initial setup. If you choose not to change the root password using initial-setup (eg. you initally boot using headless mode), then you will be prompted to change it at  first login. 
+####Minimal image
+To facilitate optional headless support, a root user password is already set. After the initial OS boot, please set the timezone, root password and create users when prompted at initial setup. If you choose not to change the root user password using initial-setup (eg. you initially boot using headless mode), then you will be prompted to change it at first login. 
 
 ####Barebone release image
 To facilitate default headless support, a root user password is already set. You will be prompted to change your root password when you first login.
+
+**Root password = fedberry**
 
 ##Additional or Modified Software
 Yum repositories are located here: [http://download.fedberry.org/releases/](http://download.fedberry.org/releases/)

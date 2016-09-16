@@ -28,7 +28,7 @@ The root partition is NOT automatically re-sized at boot due to boot time and im
 No root user password (or users) are set by default. After the initial OS boot, please set the timezone, root password and create users when prompted at initial setup.
 
 ####Minimal release image
-To facilitate optional headless support, a root user password is already set. After the initial OS boot, please set the timezone, root password and create users when prompted at initial setup. If you choose not to change the root user password using initial-setup (eg. you initially boot using headless mode), then you will be prompted to change it at first login. 
+To facilitate optional [headless](https://github.com/fedberry/fedberry-headless) mode support, a root user password is already set (see below). After the initial OS boot, please set the timezone, root password and create users when prompted at initial setup. If you choose not to change the root user password using initial-setup (eg. you initially boot using headless mode), then you will be prompted to change it at first login. 
 
 ####Barebone release image
 To facilitate default headless support, a root user password is already set. You will be prompted to change your root password when you first login.
@@ -40,7 +40,7 @@ Yum repositories are located here: [http://download.fedberry.org/releases/](http
 
 As this is a Fedora Remix, some additional or modified RPMs are included to enable full compatibility with the BCM2836/7 SOCs (RPi2/3) or to add extra features. The most significant change is a custom kernel. The included kernel has vanilla kernel.org sources patched with modications from the Raspberry Pi foundation's kernel tree (bcm2709 port). Refer here: https://github.com/raspberrypi/linux.
 
-All software sources for the RPMs can be found in our githib repositories (https://github.com/fedberry) or the provided SRPMs here: http://download.fedberry.org/releases/
+All software sources for the RPMs can be found in our github repositories (https://github.com/fedberry) or the provided SRPMs here: http://download.fedberry.org/releases/
 
 ##DISCLAIMER
 **All software provided on this site are being offered for FREE in hopes that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. Use at your OWN RISK AND WE DISCLAIM LIABILITY FOR ANY DAMAGES RESULTING FROM ITS USE.**

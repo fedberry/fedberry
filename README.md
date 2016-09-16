@@ -2,7 +2,7 @@
 
 ## IMPORTANT INFORMATION
 
-These are Fedora® Remix disk images specifically built for use with the Raspberry Pi® 2/3 Model B computers. These disk images are unofficial Fedora Remixes and are not afiliated, provided or supported by the Fedora Project. Official, unmodified Fedora software is available through the Fedora Project website http://fedoraproject.org. *^
+These are Fedora® Remix disk images specifically built for use with the [Raspberry Pi](https://www.raspberrypi.org)® 2/3 Model B computers. These disk images are unofficial Fedora Remixes and are not afiliated, provided or supported by the Fedora Project. Official, unmodified Fedora software is available through the Fedora Project website http://fedoraproject.org. *^
 
 ##Installation
 Release images can be downloaded via our:
@@ -17,10 +17,10 @@ Please read [INSTALL.md](https://github.com/fedberry/fedberry/blob/master/INSTAL
 The root partition is automatically re-sized on the first boot. After automatically rebooting the graphical 'initial-setup' utility will start. Failure to complete the initial-setup will prevent logging into the system.
 
 ####Minimal release image
-The root partition is automatically re-sized on the first boot. After automatically rebooting and if headless mode is not enabled, the serial console 'initial-setup' utility will start. If headless mode is enabled, log in using the default root user password at the login prompt.
+The root partition is automatically re-sized on the first boot. After automatically rebooting and if [headless](https://github.com/fedberry/fedberry-headless) mode is not enabled, the serial console 'initial-setup' utility will start. If headless mode is enabled, log in using the default root user password at the login prompt.
 
 ####Barebone release image
-The root partition is NOT automatically re-sized at boot due to boot time and image size considerations. The initial-setup utility is not used for this release. You can optionally use fedberry-config to resize the root partition after booting.
+The root partition is NOT automatically re-sized at boot due to boot time and image size considerations. The initial-setup utility is not used for this release. You can optionally use [fedberry-config](https://github.com/fedberry/fedberry-config) to resize the root partition after booting.
 
 ##Default Password
 
@@ -36,16 +36,16 @@ To facilitate default headless support, a root user password is already set. You
 **Root password = fedberry**
 
 ##Additional or Modified Software
-Yum repositories are located here: [http://download.fedberry.org/releases/](http://download.fedberry.org/releases/)
+Yum repositories are located here: [http://download.fedberry.org](http://download.fedberry.org)
 
 As this is a Fedora Remix, some additional or modified RPMs are included to enable full compatibility with the BCM2836/7 SOCs (RPi2/3) or to add extra features. The most significant change is a custom kernel. The included kernel has vanilla kernel.org sources patched with modications from the Raspberry Pi foundation's kernel tree (bcm2709 port). Refer here: https://github.com/raspberrypi/linux.
 
-All software sources for the RPMs can be found in our github repositories (https://github.com/fedberry) or the provided SRPMs here: http://download.fedberry.org/releases/
+All software sources for the RPMs can be found in our github repositories (https://github.com/fedberry) or the provided SRPMs here: [http://download.fedberry.org](http://download.fedberry.org)
 
 ##DISCLAIMER
 **All software provided on this site are being offered for FREE in hopes that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. Use at your OWN RISK AND WE DISCLAIM LIABILITY FOR ANY DAMAGES RESULTING FROM ITS USE.**
 
-**Fedora and the Infinity design logo are trademarks of Red Hat, Inc.*
+**[Fedora](https://start.fedoraproject.org/) and the Infinity design logo are trademarks of [Red Hat](https://www.redhat.com), Inc.*
 
-*^Raspberry Pi is a trademark of the Raspberry Pi Foundation*
+*^Raspberry Pi is a trademark of the [Raspberry Pi Foundation](https://www.raspberrypi.org)*
    

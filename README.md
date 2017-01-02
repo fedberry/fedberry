@@ -1,4 +1,4 @@
-# ![fedberry](https://avatars2.githubusercontent.com/u/16729488?v=3&s=40) FedBerry 24 - Fedora Remix for Raspberry Pi 2/3
+# ![fedberry](https://avatars2.githubusercontent.com/u/16729488?v=3&s=40) FedBerry 25 - Fedora Remix for Raspberry Pi 2/3
 
 ## IMPORTANT INFORMATION
 

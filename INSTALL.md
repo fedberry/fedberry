@@ -15,7 +15,7 @@ The image can be installed using the Unix/Linux dd command.
 
     For example:
     ```
-    $ sha256sum -c fedberry-24.1-beta1.CHECKSUM.asc
+    $ sha256sum -c fedberry-25.1-beta1.CHECKSUM.asc
     ```
 2.  Insert your sd card and determine which device node has been assigned to your media. Read /var/log/messages or run 'dmesg' 'to learn which device was assigned to your media (this will be something like /dev/sdc or /dev/mmcblk0).
 
@@ -27,7 +27,7 @@ The image can be installed using the Unix/Linux dd command.
     
     For example:
     ```
-    $ xzcat fedberry-minimal-24.1-beta1.raw.xz |dd bs=1M of=/dev/sdc status=progress
+    $ xzcat fedberry-minimal-25.1-beta1.raw.xz |dd bs=1M of=/dev/sdc status=progress
     ```
     
 4.  Run 'sync'; this will ensure the write cache is flushe and that it is safe to unmount and remove your SD card from the card reader.

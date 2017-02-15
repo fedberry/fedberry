@@ -1,11 +1,17 @@
-##SD CARD INSTALLATION
+##FEDBERRY IMAGE INSTALLATION
 Download images here: [http://download.fedberry.org](http://download.fedberry.org/releases/)
+
+### Boot From a USB Mass Storage Device on a RPi3
+FedBerry now supports booting your RPi3 directly from a USB mass storage device (MSD) such as a flash or USB hard drive. Be warned that this feature is experimental and may not work with all USB mass storage devices. You will need to firstly enable (program) the USB boot mode by following instructions [here](https://www.raspberrypi.org/documentation/hardware/raspberrypi/bootmodes/msd.md).
+
+Once the RPi3 USB boot mode is enabled, simply copy the desired FedBerry release image to your USB flash/hard drive (as per the following instructions) and then boot FedBerry on your RPi3. There is no need to modify the Fedberry release image once copied to your USB MSD.
 
 ###Requirements:
 - A computer running some form of Linux/Unix or Windows.
-- A minimum 4GB SD card is recommended for 'barebone' & 'minimal' image installs.
-- A minimum 8GB SD card is recommended for all other disk images.
+- A minimum 4GB SD card / USB MSD is recommended for 'barebone' & 'minimal' image installs.
+- A minimum 8GB SD card / USB MSD is recommended for all other disk images.
 - A SD/SDHC card writer, either built in to the computer or connected to a USB port.
+
 
 ###Install Images using a Linux/Unix OS
 
@@ -17,20 +23,20 @@ The image can be installed using the Unix/Linux dd command.
     ```
     $ sha256sum -c fedberry-25.1-beta1.CHECKSUM.asc
     ```
-2.  Insert your sd card and determine which device node has been assigned to your media. Read /var/log/messages or run 'dmesg' 'to learn which device was assigned to your media (this will be something like /dev/sdc or /dev/mmcblk0).
+2.  Insert your sd card or USB mass storage device (MSD) and determine which device node has been assigned to your media. Read /var/log/messages or run 'dmesg' 'to learn which device was assigned to your media (this will be something like /dev/sdc or /dev/mmcblk0).
 
-3.  As root user or 'sudo', use 'dd' to write the disk image to your SD card.
+3.  As root user or 'sudo', use 'dd' to write the disk image to your SD card or USB MSD.
 
     PLEASE NOTE that the use of the 'dd' tool can overwrite ANY partition on your computer. If you specify the wrong device you could delete all your existing linux partitions. Make sure you KNOW what you are doing here otherwise don't do it or ask someone else who does! Please be VERY careful!
     
-    Ensure the device is unmounted then copy the image file to the card: xzcat NameOfImageFile.raw.xz | dd bs=1M of=/dev/DeviceNode status=progress
+    Ensure the device is unmounted then copy the image file to the SD card / USB MSD: xzcat NameOfImageFile.raw.xz | dd bs=1M of=/dev/DeviceNode status=progress
     
     For example:
     ```
     $ xzcat fedberry-minimal-25.1-beta1.raw.xz |dd bs=1M of=/dev/sdc status=progress
     ```
     
-4.  Run 'sync'; this will ensure the write cache is flushe and that it is safe to unmount and remove your SD card from the card reader.
+4.  Run 'sync'; this will ensure the write cache is flushed and that it is safe to unmount and remove your SD card / USB MSD.
     ```
     $ sync
     ```

@@ -1,11 +1,12 @@
-##Minimal & XFCE Remixes
+##Minimal, XFCE and LXQt Remixes
 
-Both these remixes are close to 'stock' arm releases from Fedora*. Where possible, they endeavor to stick to default Fedora release settings. Major differences are:
+In general, as compared to Fedora arm releases, major differences include:
+- The use of our own custom kernels (based on Raspberry Pi foundation's bcm2709 kernel port).
+- The use of Raspberry Pi foundation's own bootloader (in lieu of uboot).
 - The use of swap files in lieu of swap partitions.
 - Having /tmp on tmpfs is enabled but size limited to 100M.
 - The root partition is automatically set to resize on first boot.
 - To facilitate optional headless booting, a default root password (fedberry) is set in the 'minimal' release.
-
 
 ##Barebone Remix
 

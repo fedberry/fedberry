@@ -1,14 +1,14 @@
-##FEDBERRY IMAGE INSTALLATION
+## FEDBERRY IMAGE INSTALLATION
 Download images here: [http://download.fedberry.org](http://download.fedberry.org/releases/)
 
-###Requirements:
+### Requirements:
 - A computer running some form of Linux/Unix or Windows.
 - A minimum 4GB SD card or USB mass storage device (MSD) is recommended for 'barebone' & 'minimal' image installs.
 - A minimum 8GB SD card or USB MSD is recommended for all other disk images.
 - A SD/SDHC card writer, either built in to the computer or connected to a USB port.
 
 
-###Install Images using a Linux/Unix OS
+### Install Images using a Linux/Unix OS
 
 The image can be installed using the Unix/Linux dd command.
 
@@ -45,7 +45,7 @@ FedBerry supports booting your RPi3 directly from a USB mass storage device (MSD
 Once the RPi3 USB boot mode is enabled, simply copy the desired FedBerry release image to your USB flash/hard drive (as per above instructions) and then boot FedBerry on your RPi3. Please note: There is no need to prepare or modify Fedberry release images once copied to your USB MSD. For further reading on RPi boot modes, please read [here](https://www.raspberrypi.org/documentation/hardware/raspberrypi/bootmodes/).
 
 
-###Install Images using Windows
+### Install Images using Windows
 
 1.  Extract the downloaded fedberry xz compressed raw image. You can use a file archiver such as [7-zip](http://www.7-zip.org) to extract xz files under Windows.
 

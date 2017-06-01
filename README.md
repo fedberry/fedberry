@@ -36,11 +36,9 @@ To facilitate default headless support, a root user password is already set. You
 **Root password = fedberry**
 
 ## Additional or Modified Software
-Yum repositories are located here: [http://download.fedberry.org](http://download.fedberry.org)
+As this is a Fedora Remix, some additional or modified RPMs are included to enable full compatibility with the BCM2836/7 SOCs (RPi2/3) or to add extra features. The most significant change is a custom [kernel](https://github.com/fedberry/kernel). The included kernel has vanilla kernel.org sources patched with modications from the Raspberry Pi foundation's kernel tree (bcm2709 port). Refer here: https://github.com/raspberrypi/linux.
 
-As this is a Fedora Remix, some additional or modified RPMs are included to enable full compatibility with the BCM2836/7 SOCs (RPi2/3) or to add extra features. The most significant change is a custom kernel. The included kernel has vanilla kernel.org sources patched with modications from the Raspberry Pi foundation's kernel tree (bcm2709 port). Refer here: https://github.com/raspberrypi/linux.
-
-All software sources for the RPMs can be found in our github repositories (https://github.com/fedberry) or the provided SRPMs here: [http://download.fedberry.org](http://download.fedberry.org)
+All software sources for RPMs can be found in our github repositories (https://github.com/fedberry) or SRPMs in our yum repoistories here: [Sourceforge mirror](https://sourceforge.net/projects/fedberry/files/releases/) and [download.fedberry.org](http://download.fedberry.org/releases/)
 
 ## DISCLAIMER
 **All software provided on this site are being offered for FREE in hopes that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. Use at your OWN RISK AND WE DISCLAIM LIABILITY FOR ANY DAMAGES RESULTING FROM ITS USE.**

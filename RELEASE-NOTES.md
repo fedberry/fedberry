@@ -1,8 +1,13 @@
 ## Minimal, XFCE and LXQt Remixes
 
 The major differences between Fedora arm releases as compared to Fedbery releases are:
-- The use of our own custom [kernels](https://github.com/fedberry/kernel) (based on Raspberry Pi foundation's bcm2709 kernel port).
+- The use of our own custom [kernels](https://github.com/fedberry/kernel) (based on Raspberry Pi foundation's bcm2709 kernel port) which provides equivalent hardware support as Raspbian / Pixel.
 - The use of Raspberry Pi foundation's own bootloader (ie. we don't use uboot).
+- Inclusion of additional software such as:
+  * Raspberry Pi VideoCore GPU [libraries & utilities](https://github.com/fedberry/raspberrypi-vc)
+  * [fedberry-config](https://github.com/fedberry/fedberry-config)
+  * [chromium](https://github.com/fedberry/chromium)
+  * [omxplayer](https://github.com/fedberry/omxplayer)
 - The use of swap files in lieu of swap partitions.
 - Having /tmp on tmpfs is enabled but size limited to 100M.
 - The root partition is automatically set to resize on first boot.

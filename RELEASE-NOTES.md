@@ -1,6 +1,6 @@
 ## Minimal, XFCE and LXQt Remixes
 
-The major differences between Fedora arm releases as compared to Fedbery releases are:
+The major differences between Fedora arm releases as compared to Fedberry releases are:
 - The use of our own custom [kernels](https://github.com/fedberry/kernel) (based on Raspberry Pi foundation's bcm2709 kernel port) which provides equivalent hardware support as Raspbian / Pixel.
 - The use of Raspberry Pi foundation's own bootloader (ie. we don't use uboot).
 - Inclusion of additional software such as:

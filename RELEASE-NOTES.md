@@ -6,8 +6,9 @@ The major differences between Fedora arm releases as compared to Fedberry releas
 - Inclusion of additional software such as:
   * Raspberry Pi VideoCore GPU [libraries & utilities](https://github.com/fedberry/raspberrypi-vc)
   * [fedberry-config](https://github.com/fedberry/fedberry-config)
-  * [chromium](https://github.com/fedberry/chromium)
+  * [bcmstat](https://github.com/fedberry/bcmstat)
   * [omxplayer](https://github.com/fedberry/omxplayer)
+  * [wiringpi](https://github.com/fedberry/wiringpi)
 - The use of swap files in lieu of swap partitions.
 - Having /tmp on tmpfs is enabled but size limited to 100M.
 - The root partition is automatically set to resize on first boot.
@@ -27,7 +28,6 @@ To achieve these goals, sacrifices were made. For example, included language sup
 - SELinux is DISABLED by default.
 - Auditd subsystem is DISABLED by default.
 - Firewalld is NOT installed.
-- Plymouth is NOT installed.
 - No swap file is created or enabled by default (you can use [fedberry-config](https://github.com/fedberry/fedberry-config) to create one if needed.
 - The / (root) partition is NOT re-sized automatically on first boot (Use [fedberry-config](https://github.com/fedberry/fedberry-config) to do this if required.
 - Journaling on the ext4 / (root) partition is disabled.

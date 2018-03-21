@@ -6,6 +6,7 @@ The major differences between Fedora arm releases as compared to Fedberry releas
 - Inclusion of additional software such as:
   * Raspberry Pi VideoCore GPU [libraries & utilities](https://github.com/fedberry/raspberrypi-vc)
   * [fedberry-config](https://github.com/fedberry/fedberry-config)
+  * [chromium](https://github.com/fedberry/chromium)
   * [bcmstat](https://github.com/fedberry/bcmstat)
   * [omxplayer](https://github.com/fedberry/omxplayer)
   * [wiringpi](https://github.com/fedberry/wiringpi)
